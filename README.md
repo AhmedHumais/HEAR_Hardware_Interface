@@ -1,2 +1,2 @@
-# HEAR_sensor_interface
-This repository contains sensors interface utilizing the HEAR_Architecture
+# HEAR_Hardware_Interface
+This repository contains hardware interface utilizing the HEAR_Architecture
