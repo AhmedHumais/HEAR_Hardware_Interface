@@ -1,20 +1,22 @@
 {
-  "configurations": [
-    {
-      "browse": {
-        "databaseFilename": "",
-        "limitSymbolsToIncludedHeaders": true
-      },
-      "includePath": [
-        "/home/pedrohrpbs/catkin_ws_NAVIO/devel/include/**",
-        "/opt/ros/melodic/include/**",
-        "/home/pedrohrpbs/catkin_ws_tensorflow/src/dnn_system_identification/include/**",
-        "/home/pedrohrpbs/catkin_ws_NAVIO/src/flight_controller_temp/include/**",
-        "/home/pedrohrpbs/catkin_ws_NAVIO/src/flight_scenario/include/**",
-        "/home/pedrohrpbs/catkin_ws_NAVIO/src/mocap_optitrack/include/**",
-        "/usr/include/**"
-      ],
-      "name": "ROS"
-    }
-  ]
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+              "../HEAR_Architecture/**",
+              "../HEAR_ROS_BRIDGE/**",
+              "../HEAR_Hardware_Interface/**",
+              "../../devel/include/**",
+              "/opt/ros/melodic/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11"
+        }
+    ],
+    "version": 4
 }
