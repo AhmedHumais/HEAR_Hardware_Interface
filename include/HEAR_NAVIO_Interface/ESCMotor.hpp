@@ -2,9 +2,9 @@
 
 #include <unistd.h>
 #include <memory>
-#include "NAVIO_Interface/Navio2/PWM.h"
-#include "NAVIO_Interface/Navio2/RCOutput_Navio2.h"
-#include "NAVIO_Interface/Navio2/Common/Util.h"
+#include "HEAR_NAVIO_Interface/Navio2/PWM.h"
+#include "HEAR_NAVIO_Interface/Navio2/RCOutput_Navio2.h"
+#include "HEAR_NAVIO_Interface/Navio2/Common/Util.h"
 #include "HEAR_actuation/Actuator.hpp"
 
 class ESCMotor : public Actuator {

@@ -1,6 +1,6 @@
 #pragma once
-#include "NAVIO_Interface/Navio2/Common/Util.h"
-#include "NAVIO_Interface/Navio2/ADC_Navio2.h"
+#include "HEAR_NAVIO_Interface/Navio2/Common/Util.h"
+#include "HEAR_NAVIO_Interface/Navio2/ADC_Navio2.h"
 #include <memory>
 #include "HEAR_core/Block.hpp"
 #include "HEAR_core/OutputPort.hpp"

@@ -19,14 +19,18 @@ catkin_package(
 
 include_directories(
   ${CMAKE_CURRENT_SOURCE_DIR}/include
-  ${CMAKE_CURRENT_SOURCE_DIR}/include/NAVIO_Interface/Navio2
-  ${CMAKE_CURRENT_SOURCE_DIR}/include/NAVIO_Interface/Navio2/Common
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/HEAR_NAVIO_Interface/Navio2
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/HEAR_NAVIO_Interface/Navio2/Common
   ${catkin_INCLUDE_DIRS}
 )
 
 FILE(GLOB SOURCE_FILES *.hpp *.cpp *.h
         ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/Navio2_cpp/*.cpp)
+
+add_library(${PROJECT_NAME}
+${SOURCE_FILES}
+)
 
 add_executable(${PROJECT_NAME}_node ${SOURCE_FILES})
 target_link_libraries(${PROJECT_NAME}_node ${catkin_LIBRARIES})

@@ -1,4 +1,4 @@
-#include "NAVIO_Interface/BatteryMonitor.hpp"
+#include "HEAR_NAVIO_Interface/BatteryMonitor.hpp"
 
 BatteryMonitor::BatteryMonitor() {
     _output_port_0 = new OutputPort(ports_id::OP_0, this);
