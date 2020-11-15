@@ -13,8 +13,6 @@ catkin_package(
   LIBRARIES ${PROJECT_NAME}
   CATKIN_DEPENDS
     roscpp
-  DEPENDS
-    system_lib
 )
 
 include_directories(
