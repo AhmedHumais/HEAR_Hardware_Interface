@@ -13,6 +13,7 @@ catkin_package(
   LIBRARIES ${PROJECT_NAME}
   CATKIN_DEPENDS
     roscpp
+    hear_architecture
 )
 
 include_directories(
@@ -22,7 +23,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-FILE(GLOB SOURCE_FILES *.hpp *.cpp *.h
+FILE(GLOB SOURCE_FILES
         ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/Navio2_cpp/*.cpp)
 
@@ -31,4 +32,5 @@ ${SOURCE_FILES}
 )
 
 add_executable(${PROJECT_NAME}_node ${SOURCE_FILES})
+add_dependencies(${PROJECT_NAME}_node ${catkin_EXPORTED_TARGETS})
 target_link_libraries(${PROJECT_NAME}_node ${catkin_LIBRARIES})
